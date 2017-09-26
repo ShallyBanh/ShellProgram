@@ -105,7 +105,7 @@ void our_umask(){
   umask(s_irwxo);
  // , umask S_IRXWU: %u, umask S_IRXWG: %u, umask S_IRXWO: %u
   //,umask S_IRXWU: %o, umask S_IRXWG: %o, umask S_IRXWO: %o\n" mask , s_irwxu, s_irwxg, s_irwxo
-  printf("Unmask: %04o,umask S_IRXWU: %04o, umask S_IRXWG: %04o, umask S_IRXWO: %04o\n", mask , s_irwxu, s_irwxg, s_irwxo);
+  printf("Unmask: %04o, S_IRXWU: %04o, S_IRXWG: %04o, S_IRXWO: %04o\n", mask , S_IRWXU, S_IRWXG, S_IRWXO);
 
 }
 
