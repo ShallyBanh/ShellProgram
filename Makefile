@@ -1,13 +1,11 @@
-all: a1monitor a1shell 
-
 a1monitor: a1shell 
-	gcc a1monitor.c -o a1monitor.o 
+	gcc -o a1monitor a1monitor.c 
 
 a1shell: 
-	gcc a1shell.c -o a1shell
+	gcc -o a1shell a1shell.c 
 
 clean:
-	rm -rf *.o $(OBJECTS) a1shell 
+	rm -rf a1shell a1monitor 
 
 tar:
 	tar -cvf submit.tar *
