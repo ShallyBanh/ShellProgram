@@ -200,7 +200,7 @@ int main(int argc, char*argv[]){
   //child process
   else if(pid == 0) {
     //try to run a1monitor
-    if( execve("a1monitor.o", argv, NULL) == -1){
+    if( execve("a1monitor", argv, NULL) == -1){
       printf( "Faied to run a1monitor: Error ocurred is: %s\n", strerror(errno) );
     }
     _exit(EXIT_FAILURE);   
