@@ -1,7 +1,5 @@
 /**
  * Shally Banh
- * 1424763
- * Cmput379 Assign 1
 */
 #include <stdio.h>
 #include <stdlib.h>
